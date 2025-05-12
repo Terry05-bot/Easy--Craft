@@ -1,0 +1,110 @@
+<script>
+    if (!localStorage.getItem('loggedInUser')) {
+      window.location.href = "login.html";
+    }
+  </script>
+  
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Card Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="genbackground">
+<br><br><br><br>
+  <div class="container">
+    <h1 class="vir">🎨 EasyCraft Cards</h1>
+    <h3 class="Quickly">Quickly create beautiful e-cards for every occasion.</h3>
+<br><br><br><br>
+
+    <div class="form">
+      <div class="box1">
+      <label class="custom-file-upload">
+      📷 Upload Image
+      <input type="file" id="imageUpload" accept="image/*" hidden />
+      </label>
+
+      <label class="custom-file-upload">
+      🖼️ Upload Background
+      <input type="file" id="bgUpload" accept="image/*" hidden />
+      </label>
+
+      <label for="fontColorPicker" class="text">Text Color:</label>
+      <input type="color" id="fontColorPicker" onchange="changeFontColor(this.value)" />
+      </div>
+
+<br>
+
+      <div class="box1">
+      <select id="fontSelect" onchange="changeFontStyle(this.value)" class="but">
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="'Courier New', monospace">Courier New</option>
+        <option value="'Times New Roman'">Times New Roman</option>
+        <option value="'Comic Sans MS'">Comic Sans MS</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+      <button id="voice-btn">🎙️ Speak Message</button>  
+      <button onclick="saveTemplate()">💾 Save Template</button>
+      <button onclick="loadTemplate()">📂 Load Template</button>
+      </div>
+
+<br>
+
+      <!-- <div class="box1">
+      <input id="nameInput" placeholder="Header" />
+      <input id="messageInput" placeholder="Enter a message" />
+      <button onclick="updateCard()">Update Card</button>
+      </div> -->
+    </div>
+
+<br>
+
+    <select id="cardSizeSelect" onchange="changeCardSize(this.value)">
+        <option value="small">Small (300x200)</option>
+        <option value="medium" selected>Medium (500x300)</option>
+        <option value="large">Large (700x400)</option>
+    </select>      
+    <!-- <div id="card">
+      <h2 id="cardName">Header</h2>
+      <img id="uploadedImage" src="" alt="Uploaded Image" style="max-width:100px; max-height:100px; display:none;"/>
+      <p id="cardMessage">Your message here</p>
+    </div> -->
+<div id="card">
+  <h2 id="cardName" contenteditable="true">Your Name</h2>
+  <img id="uploadedImage" src="" alt="Uploaded Image" style="max-width:100px; max-height:100px; display:none;"/>
+  <p id="cardMessage" contenteditable="true">Your message here</p>
+</div>
+
+<br><br>
+    <div class="buttons">
+      <button onclick="downloadAsImage()" class="buttonbelow">Download as Image</button>
+      <button onclick="downloadAsPDF()" class="buttonbelow">Download as PDF</button>
+    </div>
+    <div class="share-dropdown">
+       <button class="share-button">🔗 Share</button>
+       <div class="dropdown-content">
+          <a href="#" onclick="shareOnFacebook()">Facebook</a>
+          <a href="#" onclick="shareOnTwitter()">Twitter</a>
+          <a href="#" onclick="shareOnWhatsApp()">WhatsApp</a>
+          <a href="#" onclick="shareOnInstagram()">Instagram</a>
+          <a href="#" onclick="shareOnSnapchat()">Snapchat</a>
+       </div>
+    </div>
+     
+  </div>
+ 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+
+  <br><br><br><br><br><br><br>
+
+</body>
+</html>

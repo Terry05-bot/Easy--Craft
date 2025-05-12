@@ -1,0 +1,362 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .vir{
+    color: #e96e4b;
+  }
+  .Quickly{
+    color: wheat;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: auto;
+  }
+.genbackground{
+  background-image: url(asserts/pic6.jpg);
+}
+
+  .box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+.but{
+  border-radius: 15px;
+  color: #fff;
+  background-color: #e96e4b;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+.text{
+  color: whitesmoke;padding-top: 20px;
+
+}
+
+
+.form{
+  justify-content: center;
+  width: 800px;
+}
+  .form input {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+   button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #e96e4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  } 
+  .buttonbelow{
+    color: wheat;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid wheat;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: 0.6s;
+  }
+  .buttonbelow:hover{
+    background-color: #e96e4b;
+  }
+
+  #card {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #card h2 {
+    color: #333;
+  }
+  
+  #card p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+#fontColorPicker {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: transparent;
+}
+
+
+  #card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #cardName, #cardMessage {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+
+
+
+
+
+  /* body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  /* .container {
+    background-color: white;
+    padding: 30px;
+    margin: auto;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  } */
+  
+  /* input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  #card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  select {
+    padding: 10px;
+    margin: 5px;
+  } */
+  
+
+
+
+  /*login style/sign up*/
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.bodylogin{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(asserts/p2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 0 10px;
+    color: white;
+}
+body::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    width: 100%;
+    /* background-image: url(assets/background1.jpg);
+    background-position: center;
+    background-size: cover; */
+    z-index: -1;
+}
+.wrapper{
+    width: 490px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ffffff90;
+    backdrop-filter: blur(5px);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.input-field{
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+}
+.input-field label{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+.input-field input{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.input-field input:focus~lable,
+.input-field input:valid~label{
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+.forget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: #fff;
+}
+#remember{
+    accent-color: #000;
+}
+.forgot label{
+    display: flex;
+    align-items: center;
+}
+.forget label p{
+    margin-left: 8px;
+}
+.wrapper a{
+    color: #efefef;
+    text-decoration: underline;
+}
+.buttonlogin{
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+.register{
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+
+
+
+
+/*share*/
+.share-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.share-button {
+color: wheat;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid wheat;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: 0.6s;
+}
+.share-button:hover{
+  background-color: #e96e4b;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#e96e4b;
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.share-dropdown:hover .dropdown-content {
+  display: block;
+}

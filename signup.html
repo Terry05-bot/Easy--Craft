@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bodylogin">
+     <div class="wrapper">
+        <form action="#" method="get">
+            <h2>Welcome</h2>
+            <div class="input-field"><input type="text" id="signupEmail" required>
+                <label>Enter your Email</label>
+            </div>
+            <div class="input-field"><input type="password"  id="signupPassword" required>
+                <label>Enter your Password</label>
+            </div>
+            <div class="forget">
+                <label for="remember"><input type="checkbox" id="remember"> <p>Remember Me</p></label>
+            </div>
+            <button type="submit" onclick="signup()" class="buttonlogin">Sign Up</button>
+            <div class="register">
+                <p>
+                    Already have an Account?
+                    <a href="login.html">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+  <!-- <div class="container">
+    <h2>Sign Up</h2>
+    <input type="text" id="signupEmail" placeholder="Email" required />
+    <input type="password" id="signupPassword" placeholder="Password" required />
+    <button onclick="signup()">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div> -->
+  <script src="auth.js"></script>
+</body>
+</html>
